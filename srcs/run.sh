@@ -25,9 +25,9 @@ cp -rp ./tmp/wp-config.php /var/www/html/wordpress
 service mysql start
 echo "CREATE DATABASE IF NOT EXISTS wordpress;" \
 	| mysql -u root --skip-password
-echo "CREATE USER IF NOT EXISTS 'jiylee'@'localhost' IDENTIFIED BY 'jiylee';" \
+echo "CREATE USER IF NOT EXISTS 'soekim'@'localhost' IDENTIFIED BY '0000';" \
 	| mysql -u root --skip-password
-echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'jiylee'@'localhost' WITH GRANT OPTION;" \
+echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'soekim'@'localhost' WITH GRANT OPTION;" \
 	| mysql -u root --skip-password
 
 
